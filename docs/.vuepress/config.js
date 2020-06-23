@@ -46,6 +46,9 @@ module.exports = {
                 'js',
                 'es6',
                 'vue'
+            ],
+            '/testDemo/': [
+                ''
             ]
         },
         sidebarDepth: 2

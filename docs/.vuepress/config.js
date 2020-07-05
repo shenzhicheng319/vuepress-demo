@@ -10,44 +10,18 @@ module.exports = {
         logo: '/picture.jpg',  // 左上角logo
         nav: [ // 导航栏配置
             { text: '首页', link: '/' },
-            { text: '技术文档', link: '/tech/' },
-            { text: 'testDemo', link: '/testDemo/' }
+            { text: '技术文档', link: '/blog/' },
+            { text: '诗和远方', link: '/poetry/' }
         ],
-        // sidebar: [// 侧边栏配置
-        //     {
-        //         title: '技术文档',   // 必要的
-        //         // path: '/cssTech/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        //         collapsable: false, // 可选的, 默认值是 true,
-        //         sidebarDepth: 2,    // 可选的, 默认值是 1
-        //         children: [
-        //             {
-        //                 title: 'css相关',
-        //                 path: '/cssTech/'
-        //             },
-        //             {
-        //                 title: 'js相关',
-        //                 path: '/jsTech/'
-        //             },
-        //             {
-        //                 title: 'vue相关',
-        //                 path: '/vueTech/'
-        //             },
-        //             {
-        //                 title: 'es6相关',
-        //                 path: '/es6Tech/'
-        //             }
-        //         ]
-        //     }
-        // ],
         sidebar: {
-            '/tech/': [
+            '/blog/': [
                 '',
-                'css',
-                'js',
-                'es6',
-                'vue'
+                'css/',
+                'js/',
+                'es6/',
+                'vue/'
             ],
-            '/testDemo/': [
+            '/poetry/': [
                 ''
             ]
         },

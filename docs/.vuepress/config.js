@@ -19,7 +19,9 @@ module.exports = {
                 'css/',
                 'js/',
                 'es6/',
-                'vue/'
+                'vue/',
+                'react/',
+                'webpack/'
             ],
             '/poetry/': [
                 ''

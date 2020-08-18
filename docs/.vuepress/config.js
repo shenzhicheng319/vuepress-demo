@@ -11,6 +11,7 @@ module.exports = {
         nav: [ // 导航栏配置
             { text: '首页', link: '/' },
             { text: '技术文档', link: '/blog/' },
+            { text: '随笔', link: '/note/' },
             { text: '诗和远方', link: '/poetry/' }
         ],
         sidebar: {
@@ -22,6 +23,9 @@ module.exports = {
                 'vue/',
                 'react/',
                 'webpack/'
+            ],
+            '/note/': [
+                ''
             ],
             '/poetry/': [
                 ''

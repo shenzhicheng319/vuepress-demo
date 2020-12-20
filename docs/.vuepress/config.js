@@ -11,21 +11,62 @@ module.exports = {
         nav: [ // 导航栏配置
             { text: '首页', link: '/' },
             { text: '技术文档', link: '/blog/' },
-            { text: '随笔', link: '/note/' },
+            { text: '随笔', link: '/note/note1/' },
             { text: '诗和远方', link: '/poetry/' }
         ],
         sidebar: {
             '/blog/': [
-                '',
-                'css/',
-                'js/',
-                'es6/',
-                'vue/',
-                'react/',
-                'webpack/'
+                {
+                    title: '博客',
+                    collapsable: false,
+                    path: 'css/'
+                },
+                {
+                    collapsable: false,
+                    children: [
+                        {title: 'css', path: 'css/'}
+                    ]
+                },
+                {
+                    collapsable: false,
+                    children: [
+                        { title: "js", path: "js/" },
+                    ]
+                }
+                ,{
+                    collapsable: false,
+                    children: [
+                        { title: "es6", path: "es6/" },
+                    ]
+                },{
+                    collapsable: false,
+                    children: [
+                        { title: "vue", path: "vue/" },
+                    ]
+                },{
+                    collapsable: false,
+                    children: [
+                        { title: "react", path: "react/" },
+                    ]
+                },{
+                    collapsable: false,
+                    children: [
+                        { title: "webpack", path: "webpack/" },
+                    ]
+                }
             ],
             '/note/': [
-                ''
+                {
+                    title: '随笔',
+                    collapsable: false
+                },
+                {
+                    collapsable: false,
+                    children: [
+                        { title: "webpack", path: "note1/" },
+                        { title: "note2", path: "note2/" },
+                    ]
+                }
             ],
             '/poetry/': [
                 ''
